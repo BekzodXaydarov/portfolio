@@ -13,6 +13,28 @@
   padding: 0px 90px 0px 90px;
 }
 
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-family: monospace;
+  color: white;
+  animation: titleAnimation 1s ease forwards;
+}
+.title span {
+  color: #00CAD8;
+}
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @media screen and (max-width:900px) {
    .app {
     padding: 0px 50px 0px 50px;
