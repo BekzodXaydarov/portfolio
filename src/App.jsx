@@ -7,6 +7,7 @@ import Title from "./components/Title/title";
 import Services from "./components/Services/Services";
 import PortFolio from "./components/PortFolio/portfolio";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -22,9 +23,10 @@ const App = () => {
         <Title title={"Contact "} title2={"Me"} />
         <Contact />
       </div>
+      <Footer />
     </>
   );
 };
 
 export default App;
-// © 2024 Edusity. All rights reserved.
+
