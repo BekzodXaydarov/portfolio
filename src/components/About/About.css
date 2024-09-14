@@ -71,3 +71,16 @@
         transform: translateX(0px);
     }
 }
+
+@media screen and (max-width:1000px) {
+    .about {
+        flex-direction: column;
+    }
+    .about-info {
+        width: 100%;
+        text-align: center;
+    }
+    .about-info .title {
+        text-align: center !important;
+    }
+}
