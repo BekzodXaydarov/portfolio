@@ -3,3 +3,4 @@ color1=#313743
 color2=#00CAD8
 color3=#222831
 color4=#8dc6ff
+color5=#092968

@@ -84,3 +84,14 @@
         text-align: center !important;
     }
 }
+
+@media screen and (max-width:350px) {
+  .about-img {
+    width: 280px !important;
+  }
+
+  .about .about-description {
+    font-size: 12 px;
+  }
+ 
+}

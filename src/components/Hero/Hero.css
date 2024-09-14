@@ -35,7 +35,7 @@
     opacity: 0;
     animation: rightAnimation 1.5s ease forwards;
 }
-.hero .hero-info .hero-links {
+ .hero-links {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -162,7 +162,7 @@
       width: 80%;
   }
   .hero .profile {
-    width: 350px !important;
+    width: 350px;
   }
 }
 @media screen and (max-width:500px) {
@@ -171,5 +171,19 @@
   }
   .hero .hero-info h1 {
     font-size: 30px;
+  }
+  .profile {
+    width: 350px !important;
+  }
+}
+@media screen and (max-width:350px) {
+  .profile {
+    width: 280px !important;
+  }
+  .hero .hero-info h2,.hero .hero-info h2 span input {
+    font-size: 12px !important;
+  }
+  .hero .hero-info h1 {
+    font-size: 20px;
   }
 }

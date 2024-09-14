@@ -2,8 +2,8 @@ import React from "react";
 import "./Hero.css";
 import { FaGithub, FaTelegram } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
+import { Texnologies } from "../../utils";
 
-const Texnologies = ["Frontend dasturchi man",'Backend dasturchi man']
 
 const Hero = () => {
   return (

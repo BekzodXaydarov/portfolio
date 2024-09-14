@@ -27,6 +27,7 @@ const Navbar = () => {
           offset={0}
           duration={500}
           className="link"
+          onClick={() => handleBars(false)}
         >
           Home
         </Link>
@@ -36,15 +37,17 @@ const Navbar = () => {
           offset={0}
           duration={500}
           className="link"
+          onClick={() => handleBars(false)}
         >
           About
         </Link>
         <Link
-          to="sevice"
+          to="sevices"
           smooth={true}
           offset={0}
           duration={500}
           className="link"
+          onClick={() => handleBars(false)}
         >
           Service
         </Link>
@@ -54,6 +57,7 @@ const Navbar = () => {
           offset={0}
           duration={500}
           className="link"
+          onClick={() => handleBars(false)}
         >
           Poftfolio
         </Link>
@@ -63,6 +67,7 @@ const Navbar = () => {
           offset={0}
           duration={500}
           className="link"
+          onClick={() => handleBars(false)}
         >
           Contact
         </Link>
