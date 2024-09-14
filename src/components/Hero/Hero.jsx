@@ -8,6 +8,7 @@ const Texnologies = ["Frontend dasturchi man",'Backend dasturchi man']
 const Hero = () => {
   return (
     <div id="hero" className="hero">
+      <img src="/avatar.jpg" alt="" className="profile" />
       <div className="hero-info">
         <h2>Salom men</h2>
         <h1>Xaydarov Bekzod</h1>
