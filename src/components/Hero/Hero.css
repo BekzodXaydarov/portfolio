@@ -63,6 +63,7 @@
     font-size: 22px;
 }
 .hero .hero-img {
+  width: 600px;
   border-radius: 50%;
   animation: imgAnimation 5s ease infinite;
   border: 5px solid #142d4c;
