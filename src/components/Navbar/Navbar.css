@@ -1,0 +1,129 @@
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-logo {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  cursor: pointer;
+  animation: logoAnimation .8s ease forwards;
+  opacity: 0;
+}
+nav .link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  animation: linksAnimation .8s ease forwards;
+  opacity: 0;
+}
+nav .link-wrapper .link {
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  font-size: 17px;
+}
+nav .link-wrapper .link::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #00cad8;
+  position: absolute;
+  top: 19px;
+  transition: all 0.5s ease-in-out;
+}
+nav .link-wrapper .link:hover::before {
+  width: 100%;
+}
+nav .link-wrapper .link:hover {
+  color: #00cad8;
+}
+
+nav .bars {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+nav .bars svg {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 800px) {
+  nav .link-wrapper {
+    position: absolute;
+    background-color: #1b1f25;
+    top: 0px;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    padding-top: 80px;
+    animation: navLinks 1s ease-in-out;
+  }
+  nav .bars {
+    display: block;
+    z-index: 2;
+  }
+  nav .link-wrapper.active {
+    right: 0;
+    display: flex;
+    opacity: 1;
+    animation: navLinks 1s ease-in-out;
+  }
+  nav .link-wrapper .link {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:600px) {
+  nav .link-wrapper {
+    width: 60%;
+  }
+}
+@media screen and (max-width:400px) {
+    nav .nav-logo {
+        font-size: 35px;
+    }
+}
+
+@keyframes navLinks {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes linksAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

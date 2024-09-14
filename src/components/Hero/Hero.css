@@ -1,0 +1,122 @@
+.hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .hero-info h2 {
+  font-size: 30px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  gap: 5px;
+  animation: h2Animation 1s ease-in-out forwards;
+  opacity: 0;
+}
+.hero .hero-info h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0;
+  animation: h1Animation 1s ease-in-out forwards;
+}
+.hero .hero-info h2 span input {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: #00cad8;
+}
+.hero .hero-info .hero-description {
+    width: 50%;
+    margin-top: 15px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 0;
+    animation: rightAnimation 1.5s ease forwards;
+}
+.hero .hero-info .hero-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 15px;
+    animation: rightAnimation 1s ease forwards;
+}
+.hero-links a {
+    border: 1px solid #00CAD8;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.hero-links a:hover {
+    background-color: #00CAD8;
+    color: #142d4c;
+    transform: scale(1.30);
+}
+.hero-links  a {
+    color: #00CAD8;
+    font-size: 22px;
+}
+.hero .hero-img {
+  border-radius: 50%;
+  animation: imgAnimation 5s ease infinite;
+  border: 5px solid #142d4c;
+  box-shadow: 0px 0px 50px 0px #142d4c;
+}
+@keyframes imgAnimation {
+  0% {
+    border-color:  #00CAD8;
+    box-shadow: 0px 0px 50px 0px #00CAD8;
+    transform: translateY(0px);
+  }
+  50% {
+    border-color: #8dc6ff;
+    box-shadow: 0px 0px 50px 0px #8dc6ff;
+    transform: translateY(-15px);
+  }
+  100% {
+    border-color: #128494;
+    box-shadow: 0px 0px 50px 0px #128494;
+    transform: translateY(0px);
+  }
+}
+
+
+
+@keyframes h2Animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes h1Animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rightAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
