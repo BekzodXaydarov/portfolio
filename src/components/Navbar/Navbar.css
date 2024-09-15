@@ -74,7 +74,7 @@ nav .bars svg {
 }
 @media screen and (max-width: 800px) {
   nav .link-wrapper {
-    position: absolute;
+    position: fixed;
     background-color: #1b1f25;
     top: 0px;
     right: -100%;
@@ -85,6 +85,7 @@ nav .bars svg {
     flex-direction: column;
     padding-top: 80px;
     animation: navLinks 1s ease-in-out;
+    z-index: -1;
   }
   nav .bars {
     display: block;
@@ -95,6 +96,7 @@ nav .bars svg {
     display: flex;
     opacity: 1;
     animation: navLinks 1s ease-in-out;
+    z-index: 2;
   }
   nav .link-wrapper .link {
     font-size: 20px;
