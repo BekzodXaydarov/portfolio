@@ -43,6 +43,7 @@ const Hero = () => {
               <FaFacebook />
             </a>
         </ul>
+        <button className="hero-btn">Dowloand Rezume </button>
       </div>
         <img src="/avatar.jpg" alt="" className="hero-img" />
     </div>

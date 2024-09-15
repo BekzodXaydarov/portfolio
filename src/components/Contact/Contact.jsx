@@ -30,13 +30,13 @@ const Contact = () => {
           </a>
         </div>
         <ul className="hero-links">
-          <a href="https://t.me/Xaydarovdev" target="_blank">
-            <FaTelegram />
-          </a>
-          <a href="https://github.com/BekzodXaydarov" target="_blank">
-            <FaGithub />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://t.me/Xaydarovdev" target="_blank">
+              <FaTelegram />
+            </a>
+            <a href="https://github.com/BekzodXaydarov" target="_blank">
+              <FaGithub />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
               <FaInstagram />
             </a>
             <a href="https://www.instagram.com/" target="_blank">
