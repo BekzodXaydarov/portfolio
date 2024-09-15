@@ -72,6 +72,9 @@
     }
 }
 @media screen and (max-width:550px) {
+    .contact-info {
+        width: 110% !important;
+    }
     .contact .contact-form input,textarea, .contact button {
         width: 370px !important;
     }

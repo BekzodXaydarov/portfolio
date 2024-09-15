@@ -78,7 +78,7 @@ nav .bars svg {
     flex-direction: column;
     padding-top: 80px;
     z-index: -1;
-    transition: all .8s ease-in-out;
+    transition: all .5s ease-in-out;
   }
   nav .bars {
     display: block;
@@ -93,6 +93,9 @@ nav .bars svg {
   }
 }
 @media screen and (max-width:600px) {
+  nav {
+    padding: 0px 30px 0px 30px;
+   }  
   nav .link-wrapper {
     width: 60%;
   }
