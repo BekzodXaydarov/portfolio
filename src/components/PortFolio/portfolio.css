@@ -3,6 +3,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
   padding-bottom: 15px;
 }
 .portfolio-card {
@@ -10,8 +11,11 @@
   height: 300px;
   cursor: pointer;
   margin-top: 15px;
-  transition: all 0.5s ease-in-out !important;
+  transition: .5s !important;
   position: relative;
+}
+.portfolio-card:hover {
+  transform: scale(1.10) !important;
 }
 .portfolio .portfolio-card:nth-child(even) {
   animation: portfolioCardAnimation 1s ease-in-out forwards;
@@ -26,7 +30,9 @@
   height: 100%;
 }
 .portfolio-card:hover {
+  transform: scale(1.10);
   box-shadow: 0px 0px 20px 0px #00cad8;
+  transition: .5s !important;
 }
 .portfolio-card-title {
   color: #00cad8;
@@ -58,14 +64,10 @@
   }
   .portfolio-card {
     max-width: 500px !important;
+  height: 250px !important;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .portfolio-card {
-    width: 250px !important;
-  }
-}
 
 @keyframes portfolioCardAnimation {
   0% {

@@ -4,12 +4,16 @@
     display: flex !important;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 15px;
 }
 
 .contact .contact-info {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 30%;
+}
+.contact .contact-info p {
+    animation: descriptionAnimation 1s ease forwards;
 }
 .contact .contact-links {
     display: flex;
@@ -18,6 +22,7 @@
     flex-direction: column;
     gap: 15px;
     margin-top: 15px;
+    animation: linksAnimation 1s ease forwards;
 }
 .contact-links a {
     display: flex;
@@ -39,8 +44,12 @@
  background-color: #222831;
  color: white;
 }
+.contact-form input{
+    animation: inputAnimation 1.2s ease forwards;
+}
 .contact-form textarea {
     resize: none;
+    animation: inputAnimation 1.1s ease forwards;
 }
 .contact-form button {
     width: 500px;
@@ -51,6 +60,7 @@
     box-shadow: 0px 0px 12px 0px #00CAD8;
     cursor: pointer;
     margin-top: 15px;
+    animation: inputAnimation 1.2s ease forwards;
 }
 
 @media screen and (max-width:1000px) {
@@ -69,5 +79,44 @@
 @media screen and (max-width:400px) {
     .contact .contact-form input,textarea, .contact button {
         width: 300px !important;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .contact .contact-form input,textarea, .contact button {
+        width: 100% !important;
+    }
+}
+
+@keyframes inputAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes descriptionAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes linksAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

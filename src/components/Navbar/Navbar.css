@@ -68,17 +68,17 @@ nav .bars svg {
 }
 @media screen and (max-width: 800px) {
   nav .link-wrapper {
-    position: absolute;
+    position: fixed;
     background-color: #1b1f25;
     top: 0px;
     right: -100%;
     width: 50%;
     height: 100vh;
-    display: none;
     opacity: 0;
     flex-direction: column;
     padding-top: 80px;
-    animation: navLinks 1s ease-in-out;
+    z-index: -1;
+    transition: all .8s ease-in-out;
   }
   nav .bars {
     display: block;
@@ -86,9 +86,7 @@ nav .bars svg {
   }
   nav .link-wrapper.active {
     right: 0;
-    display: flex;
-    opacity: 1;
-    animation: navLinks 1s ease-in-out;
+    z-index: 1;
   }
   nav .link-wrapper .link {
     font-size: 20px;

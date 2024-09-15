@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import { FaGithub, FaPhoneAlt, FaTelegram } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaPhoneAlt, FaTelegram } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 
 const Contact = () => {
@@ -36,6 +36,12 @@ const Contact = () => {
           <a href="https://github.com/BekzodXaydarov" target="_blank">
             <FaGithub />
           </a>
+          <a href="https://www.instagram.com/" target="_blank">
+              <FaInstagram />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <FaFacebook />
+            </a>
         </ul>
       </div>
       <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>

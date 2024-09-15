@@ -69,7 +69,12 @@
         height: 450px !important;
     }
 }
-
+@media screen and (max-width:300px) {
+    .service {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
 @keyframes serviceAnimation {
     0%{
      opacity: 0;

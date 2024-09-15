@@ -52,15 +52,13 @@
     justify-content: center;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    color: #00CAD8;
+    font-size: 22px;
 }
 .hero-links a:hover {
     background-color: #00CAD8;
     color: #142d4c;
     transform: scale(1.30);
-}
-.hero-links  a {
-    color: #00CAD8;
-    font-size: 22px;
 }
 .hero .hero-img,.profile {
   width: 600px;
@@ -152,6 +150,9 @@
 }
 
 @media screen and (max-width:570px) {
+  .hero {
+    height: 85vh;
+  }
   .hero .hero-info h2,.hero .hero-info h2 span input {
     font-size: 25px !important;
   }
@@ -185,5 +186,16 @@
   }
   .hero .hero-info h1 {
     font-size: 20px;
+  }
+  .hero-links a {
+    width: 40px !important;  
+    height: 40px !important;
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .profile {
+    width: 100% !important;
   }
 }

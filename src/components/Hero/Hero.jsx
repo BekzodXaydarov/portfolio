@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import { FaGithub, FaTelegram } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaTelegram } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
 import { Texnologies } from "../../utils";
 
@@ -35,6 +35,12 @@ const Hero = () => {
             </a>
             <a href="https://github.com/BekzodXaydarov" target="_blank">
               <FaGithub />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <FaInstagram />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <FaFacebook />
             </a>
         </ul>
       </div>
