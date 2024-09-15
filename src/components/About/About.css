@@ -35,6 +35,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .about {
+    padding-top: 250px;
+  }
   .about-img {
     width: 400px !important;
   }

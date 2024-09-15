@@ -3,7 +3,6 @@
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  padding-bottom: 15px;
 }
 .portfolio-card {
   max-width: 350px;
@@ -49,6 +48,7 @@
   .portfolio {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
+    gap: 30px;
   }
 }
 @media screen and (max-width: 650px) {

@@ -9,6 +9,7 @@ const Contact = () => {
     fetch(`https://api.telegram.org/bot7523237105:AAESKd7q1tJzCm4xyBKEJlSGx3KZ9n7KAPM/sendMessage?chat_id=6900877326&text=${encodeURI(`ism:${data.name}\n\nemail:${data.email}\n\nhabar:${data.message}`)}`, {
       method: "GET",
     }).catch((e) => console.log("Hato " + e));
+    reset()
 
   }
   return (

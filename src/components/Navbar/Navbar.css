@@ -66,6 +66,12 @@ nav .bars svg {
    padding: 0px 50px 0px 50px;
   }   
 }
+@media screen and (max-width:400px) {
+  nav {
+    padding: 0px 20px 0px 20px !important;
+   }  
+  
+}
 @media screen and (max-width: 800px) {
   nav .link-wrapper {
     position: absolute;
