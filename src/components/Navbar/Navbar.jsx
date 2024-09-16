@@ -13,7 +13,6 @@ const Navbar = () => {
         <Link
           to="hero"
           smooth={true}
-          offset={0}
           duration={500}
           className="link"
         >
@@ -42,7 +41,7 @@ const Navbar = () => {
           About
         </Link>
         <Link
-          to="sevices"
+          to="services"
           smooth={true}
           offset={0}
           duration={500}

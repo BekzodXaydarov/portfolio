@@ -16,11 +16,11 @@ const App = () => {
       <div className="app">
         <Hero />
         <About />
-        <Title title={"my "} title2={"Services"} />
+        <Title title={"my "} title2={"Services"} id={"services"} />
         <Services />
-        <Title title={"Port"} title2={"folio"} />
+        <Title title={"Port"} title2={"folio"} id={"portfolio"} />
         <PortFolio />
-        <Title title={"Contact "} title2={"Me"} />
+        <Title title={"Contact "} title2={"Me"} id={"contact"} />
         <Contact />
       </div>
       <Footer />

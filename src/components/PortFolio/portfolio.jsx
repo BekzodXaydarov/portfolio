@@ -4,7 +4,7 @@ import { portfolio } from "../../utils";
 
 const PortFolio = () => {
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio-container">
       {portfolio.map((item, index) => (
         <a key={index} className="portfolio-card" href={item.link} target="_blank">
           <h1 className="portfolio-card-title"> {item.title} </h1>

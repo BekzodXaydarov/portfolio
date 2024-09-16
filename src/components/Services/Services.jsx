@@ -11,7 +11,7 @@ const Services = () => {
             {<item.icon />}
             <h1 className="service-title">{item.title}</h1>
             <p className="service-description">{item.description}</p>
-            <button>Read More</button>
+            {/* <button>Read More</button> */}
         </div>
     ))}
   </div>;

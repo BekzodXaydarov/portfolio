@@ -1,22 +1,31 @@
-.portfolio {
+.portfolio-container {
   width: 100% !important;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  padding-bottom: 15px;
 }
 .portfolio-card {
   max-width: 350px;
   height: 300px;
   cursor: pointer;
   margin-top: 15px;
-  transition: all 0.5s ease-in-out !important;
   position: relative;
+  transition: all 0.5s ease-in-out;
 }
-.portfolio .portfolio-card:nth-child(even) {
+.portfolio-card:hover {
+    box-shadow: 0px 0px 20px 0px #00cad8;
+    transform: scale(1.10) !important;
+}
+.portfolio-card:hover .portfolio-card-title {
+  opacity: 1;
+}
+.portfolio-container .portfolio-card:nth-child(even) {
   animation: portfolioCardAnimation 1s ease-in-out forwards;
 }
 
-.portfolio .portfolio-card:nth-child(odd) {
+.portfolio-container .portfolio-card:nth-child(odd) {
   animation: portfolioCard2Animation 1s ease-in-out forwards;
 }
 
@@ -24,9 +33,7 @@
   width: 100% !important;
   height: 100%;
 }
-.portfolio-card:hover {
-  box-shadow: 0px 0px 20px 0px #00cad8;
-}
+
 .portfolio-card-title {
   color: #00cad8;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -41,31 +48,25 @@
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
-.portfolio-card:hover .portfolio-card-title {
-  opacity: 1;
-}
+
 @media screen and (max-width: 800px) {
-  .portfolio {
+  .portfolio-container {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     gap: 30px;
   }
 }
 @media screen and (max-width: 650px) {
-  .portfolio {
+  .portfolio-container {
     display: grid;
     grid-template-columns: 1fr !important;
   }
   .portfolio-card {
     max-width: 500px !important;
+  height: 250px !important;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .portfolio-card {
-    width: 250px !important;
-  }
-}
 
 @keyframes portfolioCardAnimation {
   0% {

@@ -25,6 +25,7 @@
   color: #00CAD8;
 }
 
+
 @keyframes titleAnimation {
   0% {
     opacity: 0;
@@ -50,5 +51,16 @@
    }  
   .title {
     font-size: 30px !important;
+  .title {
+    font-size: 40px !important;
+  }
+}
+}
+@media screen and (max-width:350px) {
+  .app {
+    padding: 0px 40px 0px 40px;
+   }   
+  .title {
+    font-size: 35px !important;
   }
 }

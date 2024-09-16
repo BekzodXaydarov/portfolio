@@ -13,7 +13,7 @@
 }
 .services .service {
     width: 500px;
-    height: 320px;
+    height: 280px;
     margin-top: 15px;
     box-shadow: 0px 0px 25px 0px #00cad8;
     border-radius: 15px;
@@ -59,8 +59,8 @@
 }
 @media screen and (max-width:500px) {
     .service {
-        width: 300px !important;
-        height: 400px !important;
+        width: 300px;
+        height: 350px !important;
     }
 }
 @media screen and (max-width:400px) {
@@ -69,7 +69,12 @@
         height: 450px !important;
     }
 }
-
+@media screen and (max-width:300px) {
+    .service {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
 @keyframes serviceAnimation {
     0%{
      opacity: 0;
