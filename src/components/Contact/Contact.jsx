@@ -1,16 +1,32 @@
 import React from "react";
 import "./Contact.css";
-import { FaFacebook, FaGithub, FaInstagram, FaPhoneAlt, FaTelegram } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaPhoneAlt,
+  FaTelegram,
+} from "react-icons/fa";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const Contact = () => {
-  const { register, handleSubmit, reset } = useForm()
+  const { register, handleSubmit, reset } = useForm();
   const onSubmit = async (data) => {
-    fetch(`https://api.telegram.org/bot7523237105:AAESKd7q1tJzCm4xyBKEJlSGx3KZ9n7KAPM/sendMessage?chat_id=6900877326&text=${encodeURI(`ism:${data.name}\n\nemail:${data.email}\n\nhabar:${data.message}`)}`, {
-      method: "GET",
-    }).catch((e) => console.log("Hato " + e));
-
-  }
+    fetch(
+      `https://api.telegram.org/bot7523237105:AAESKd7q1tJzCm4xyBKEJlSGx3KZ9n7KAPM/sendMessage?chat_id=6900877326&text=${encodeURI(
+        `ism:${data.name}\n\nemail:${data.email}\n\nhabar:${data.message}`
+      )}`,
+      {
+        method: "GET",
+      }
+    )
+      .then(() => {
+        toast.success("Ma`lumotlar keldi")
+        reset();
+      })
+      .catch((e) => console.log("Hato " + e));
+  };
   return (
     <div className="contact">
       <div className="contact-info">
@@ -30,27 +46,35 @@ const Contact = () => {
           </a>
         </div>
         <ul className="hero-links">
-            <a href="https://t.me/Xaydarovdev" target="_blank">
-              <FaTelegram />
-            </a>
-            <a href="https://github.com/BekzodXaydarov" target="_blank">
-              <FaGithub />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-              <FaInstagram />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-              <FaFacebook />
-            </a>
+          <a href="https://t.me/Xaydarovdev" target="_blank">
+            <FaTelegram />
+          </a>
+          <a href="https://github.com/BekzodXaydarov" target="_blank">
+            <FaGithub />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <FaInstagram />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <FaFacebook />
+          </a>
         </ul>
       </div>
       <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
-        <input type="text" placeholder="Enter your name" {...register("name", {
-          required: true
-        })} />
-        <input type="email" placeholder="Enter your email" {...register("email", {
-          required: true
-        })} />
+        <input
+          type="text"
+          placeholder="Enter your name"
+          {...register("name", {
+            required: true,
+          })}
+        />
+        <input
+          type="email"
+          placeholder="Enter your email"
+          {...register("email", {
+            required: true,
+          })}
+        />
         <textarea
           name="name"
           id="id"
@@ -58,7 +82,7 @@ const Contact = () => {
           cols={"40"}
           rows={"10"}
           {...register("message", {
-            required: true
+            required: true,
           })}
         ></textarea>
         <button type="submit">Sumbit</button>
